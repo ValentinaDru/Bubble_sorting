@@ -1,14 +1,14 @@
 def bubble_sorting(array)
-    array.length.times do |index|
-      smallest_number = array[0]
-  
-      (array.length - index).times do |inner_index|
-      smallest_number = array[inner_index] if smallest_number > array[inner_index]
-      end
-  
-      array.delete(smallest_number)
-      array << smallest_number
+  array.each_with_index do |element, index| #работает, но почему я не понимаю
+    smallest_number = array.first
+
+    (array.length - index).times do |inner_index|
+      smallest_number = array[inner_index] if array[inner_index] < smallest_number
     end
-    
-  array 
+
+    array.delete smallest_number
+    array << smallest_number
+  end
+  
+array 
 end

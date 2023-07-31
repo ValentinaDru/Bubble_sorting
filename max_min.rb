@@ -12,8 +12,3 @@ def max_min(array)
   }
 end
 
-array = [1,2,3,4,5,10,15,20,40,100]
-
-digits = max_min(array)
-
-pp digits

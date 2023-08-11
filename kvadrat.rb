@@ -1,7 +1,8 @@
  def kvadrat(array)
     na_polu = []
-    array.each do |x|
-        na_polu << x ** 2
+    array.each do |element|
+      na_polu << element ** 2
     end
-    print na_polu
-  end
+    na_polu
+ end
+

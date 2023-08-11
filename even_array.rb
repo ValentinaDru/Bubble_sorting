@@ -1,7 +1,7 @@
 def even_num(array)
-    na_polu = []
-    array.each do |x|
-      na_polu << x if x % 2 == 0
-    end
-    print na_polu
+  na_polu = []
+  array.each do |element|
+    na_polu << element if element % 2 == 0
   end
+  na_polu
+end
